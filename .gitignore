@@ -1,0 +1,9 @@
+*.pyc
+__pycache__
+.idea
+*.log
+*.sqlite3
+real-state/settings/env.py
+env/
+media/
+static/
