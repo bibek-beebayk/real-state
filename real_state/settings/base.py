@@ -9,6 +9,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third party apps
+    'rest_framework',
+    'ckeditor',
+    'versatileimagefield',
+
+    # Local apps
+    'apps.users',
 ]
 
 MIDDLEWARE = [
@@ -67,3 +75,6 @@ REST_FRAMEWORK = {
 VERSATILEIMAGEFIELD_SETTINGS = {
     'create_images_on_demand': False,
 }
+
+
+AUTH_USER_MODEL = 'users.User'
